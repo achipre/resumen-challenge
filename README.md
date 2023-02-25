@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 # resumen-challenge
-=======
 # Challenge ONE | Front End -  Portafolio
 
 <p align="center" >
@@ -54,4 +52,3 @@ Incluye la etiqueta "**challengeoneportafolio3**" o "**challengeoneportafolio4**
 <a href="https://www.linkedin.com/company/alura-latam/mycompany/" target="_blank">
 <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 
->>>>>>> a7e9e88 (Afinando Portafolio)
