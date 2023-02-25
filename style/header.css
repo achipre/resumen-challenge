@@ -1,0 +1,76 @@
+@import url(./base.css);
+.menu{
+  width: 100%;
+  height: 56px;
+  display: flex;
+  padding: 0 16px;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  background: var(--color-backone-light) repeat;
+}
+.menu .menu__header{
+  align-items: center;
+  display: flex;
+}
+
+.menu .menu__header svg{
+  margin-right: 4px;
+}
+.menu__header svg path{
+  fill: var(--color-fontone-light);
+}
+.menu .menu__header .menu__title{
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-fontone-light);
+}
+.menu nav ul{
+  display: none;
+}
+.menu nav .menu__list__item__contato{
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-fontone-light);
+}
+@media screen and (min-width:768px) {
+  .menu{
+    padding: 0 32px;
+  }
+  .menu .menu__header svg{
+    margin-right: 8px;
+  }
+  .menu nav .menu__list__item__contato{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-fontone-light);
+  }
+  @media screen and (min-width:1200px) {
+    .menu{
+      position: absolute;
+      max-width: 1200px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      height: 88px;
+    }
+    .menu nav{
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      box-sizing: border-box;
+    }
+    .menu nav ul{
+      display: flex;
+      font-size: 1.6rem;
+      gap: 32px;
+    }
+    .menu nav li a:hover{
+      text-decoration: underline;
+      display: flex;
+      font-size: 1.6rem;
+      gap: 32px;
+    }
+  }
+}
