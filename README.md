@@ -1,1 +1,0 @@
-# resumen-challenge
