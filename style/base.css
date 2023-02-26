@@ -6,33 +6,96 @@ coloque nas sessões indicadas*/
 
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+  --color-primary-light: #00ADB5;
+  --color-primary2-light: #02949b;
+  --color-backone-dark: #393E46;
+  --color-backtwo-dark: #222831;
+  --color-fontone-dark: #EEEEEE;
+  --color-fontone2-dark: #d6d6d6;
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-  --color-primary-light: #3A98B9;
+  --color-primary-light: #00ADB5;
   --color-backone-light: #EFFFFD;
   --color-backtwo-light: #d4fbf9;
   --color-fontone-light: #4A3F35;
   --color-fonttwo-light: #b5a7a7;
 
-  --color-de-fondo: #ffffff;
-  --color-de-link: #000;
+  --color-de-white: #ffffff;
+  --color-de-black: #000000;
 }
 
 html, body {
-    background-color: var(--cor-de-fundo) ;
-    font-family: 'Raleway';
-    margin: 0;
-    padding: 0;
-    font-size: 62.5%;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  color: var(--color-fontone-light);
+  background-color: var(--color-backone-light);
+  font-family: 'Raleway';
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 ol, ul,li {
-    list-style: none;
+  list-style: none;
 }
 a{
-    text-decoration: none;
-    color: var(--cor-de-link);
+  text-decoration: none;
+  color: var(--color-fontone-light);
 }
+
+/* Modo Dark */
+
+.background__dark--soft{
+  background-color: var(--color-backone-dark);
+}
+.todo .background__dark--hard{
+  background-color: var(--color-backtwo-dark);
+}
+.fuente__dark{
+  color: var(--color-fontone-dark);
+}
+.backround__card{
+  background-color: var(--color-de-black);
+}
+.icon__mode-dark{
+  fill: var(--color-fontone-dark);
+}
+.icon__skills-sass{
+  fill: var(--color-de-black);
+}
+.firma__mode-dark{
+  stroke: var(--color-fontone-dark);
+}
+.img-invert{
+  filter: invert(1);
+}
+.experience .experiencie__box .experience__description .experience__repo .btn__low{
+  border: solid 2px var(--color-fontone-dark);
+  background-color: var(--color-backone-dark);
+  color: var(--color-fontone-dark);
+}
+.experience .experiencie__box .experience__description .experience__repo .btn__low:hover{
+  border: solid 2px var(--color-fontone2-dark);
+  background-color: var(--color-backtwo-dark);
+  color: var(--color-fontone2-dark);
+}
+.experience .experiencie__box .experience__info .experience__description .experience__demo .btn__high{
+  border: solid 2px var(--color-fontone-dark);
+  background-color: var(--color-fontone-dark);
+  color: var(--color-backone-dark);
+}
+.experience .experiencie__box .experience__info .experience__description .experience__demo .btn__high:hover{
+  border: solid 2px var(--color-fontone2-dark);
+  background-color: var(--color-fontone2-dark);
+  color: var(--color-backtwo-dark);
+}
+.formcontato .formcontato__contacto .formcontato__text .formcontato__form .btn__high{
+  background-color: var(--color-fontone-dark);
+  color: var(--color-backone-dark);
+}
+.formcontato .formcontato__contacto .formcontato__text .formcontato__form .btn__high:hover{
+  background-color: var(--color-fontone2-dark);
+  color: var(--color-backtwo-dark);
+}
+
 
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
 
@@ -48,54 +111,54 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
 
-section.menu{
+/* section.menu{
 
-}
+} */
 
 /*Sección Title*/
 
-section.title{
+/* section.title{
 
-}
+} */
 
 /*Sección About*/
 
-section.about{
+/* section.about{
 
-}
+} */
 
 /*Sección Hobbies*/
 
-section.hobbies{
+/* section.hobbies{
     
-}
+} */
 
 /* Experiencia Académica*/
 
-section.academic{
+/* section.academic{
 
-}
+} */
 
 /* experiencia*/
 
-section.experience{
+/* section.experience{
 
-}
+} */
 
 /*Contacto*/
 
-section.formcontato{
+/* section.formcontato{
 
-}
-textarea{
+} */
+/* textarea{
     width: 300px;
-}
+} */
 
 /*footeer*/
 
-section.footer{
+/* section.footer{
    
-}
+} */
 
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */

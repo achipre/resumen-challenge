@@ -1,5 +1,6 @@
 @import url(./base.css);
 .menu{
+  position: absolute;
   width: 100%;
   height: 56px;
   display: flex;
@@ -8,7 +9,7 @@
   align-items: center;
   box-sizing: border-box;
   flex-wrap: wrap;
-  background: var(--color-backone-light) repeat;
+  color: var(--color-fontone-light);
 }
 .menu .menu__header{
   align-items: center;
@@ -18,13 +19,18 @@
 .menu .menu__header svg{
   margin-right: 4px;
 }
-.menu__header svg path{
+.icon__ligth{
   fill: var(--color-fontone-light);
 }
 .menu .menu__header .menu__title{
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--color-fontone-light);
+}
+.menu nav{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
 }
 .menu nav ul{
   display: none;
@@ -32,8 +38,14 @@
 .menu nav .menu__list__item__contato{
   font-size: 1.4rem;
   font-weight: 400;
-  color: var(--color-fontone-light);
 }
+.menu nav .menu__list__item__contato a:hover{
+  text-decoration: underline;
+}
+.menu nav .modedark a .disable{
+  display: none;
+}
+
 @media screen and (min-width:768px) {
   .menu{
     padding: 0 32px;
@@ -44,11 +56,9 @@
   .menu nav .menu__list__item__contato{
     font-size: 1.6rem;
     font-weight: 700;
-    color: var(--color-fontone-light);
   }
   @media screen and (min-width:1200px) {
     .menu{
-      position: absolute;
       max-width: 1200px;
       right: 0;
       left: 0;
@@ -66,7 +76,7 @@
       font-size: 1.6rem;
       gap: 32px;
     }
-    .menu nav li a:hover{
+    .menu nav ul li a:hover{
       text-decoration: underline;
       display: flex;
       font-size: 1.6rem;

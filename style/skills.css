@@ -1,7 +1,6 @@
 @import url(./base.css);
 .skills{
   padding: 16px;
-  background-color: var(--color-backone-light);
   color: var(--color-fontone-light);
   box-sizing: border-box;
 }
@@ -18,27 +17,18 @@
   gap: 16px;
   flex-wrap: wrap;
 }
-.skills .skills__line:hover .skills__box{
-  filter: blur(12px);
-  transform: scale(0.9)
+.card{
+  background-color: var(--color-de-white);
 }
 .skills .skills__box{
   display: flex;
-  background-color: var(--color-de-fondo);
   width: calc(50% - 8px);
   height: 118px;
   min-width: 110px;
-  
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.15);
 }
 .skills .skills__line .skills__box:hover{
-  cursor: pointer;
-  animation: big 0.5s both;
-  filter: blur(0);
-}
-@keyframes big {
-  0% {transform: scale(1);}
-  100% {transform: scale(1.2);}
-  
+  animation: big 0.4s both;
 }
 .skills .skills__box ul{
   min-width: 110px;
@@ -57,12 +47,10 @@
   font-size: 1.6rem;
   font-weight: 700;
 }
-.skills .skills__line .skills__box ul .skills__img svg path{
+.icon__skills{
   fill: var(--color-primary-light);
 }
-.skills .skills__line .skills__box ul .skills__img svg .sassinter{
-  fill: var(--color-de-fondo);
-}
+
 @media screen and (min-width:768px) {
   .skills{
     padding: 32px;
@@ -78,7 +66,7 @@
 
 @media screen and (min-width:1200px) {
   .skills{
-    padding-bottom: 88px;
+    padding-bottom: 0;
   }
   .skills .skills__title{
     font-size: 3.2rem;

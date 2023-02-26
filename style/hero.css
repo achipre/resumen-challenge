@@ -1,7 +1,6 @@
 @import url(./base.css);
 .title{
-  padding: 16px;
-  background-color: var(--color-backone-light);
+  padding: 88px 16px 16px 16px;
   color: var(--color-fontone-light);
 }
 .title .title__div{
@@ -57,12 +56,12 @@
   text-decoration: underline;
 }
 
-.title .title__div .title__container .title__network .title__network__item a svg path{
+.icon{
   fill: var(--color-fontone-light);
 }
 @media screen and (min-width:768px) {
   .title{
-    padding: 32px;
+    padding: 88px 32px 32px 32px;
   }
   .title .title__div{
     display: flex;

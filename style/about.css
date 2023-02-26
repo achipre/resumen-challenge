@@ -21,10 +21,13 @@
 }
 @media screen and (min-width:768px) {
   .about{
-    padding: 64px 32px;
+    padding: 32px;
   }
 }
 @media screen and (min-width:1200px) {
+  .about{
+    padding: 64px 32px;
+  }
   .about .about__container{
     width: 1136px;
     margin: 0 auto;
