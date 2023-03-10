@@ -40,7 +40,10 @@
   position: absolute;
   bottom: 4px;
   padding-left: 8px;
-  color: red;
+  color: red;    
+  font-size: 1.4rem;
+  transform: translate(0, 27px);
+}
 }
 .formcontato .formcontato__contacto .formcontato__text .formcontato__form .input-all .error-active,
 .formcontato .formcontato__contacto .formcontato__text .formcontato__form .input-text .error-active{

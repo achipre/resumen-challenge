@@ -3,17 +3,17 @@ const inputs = document.querySelectorAll('input, textarea');
 const tipoError = ['valueMissing','typeMismatch','patternMismatch','customError',];
 const msjErrores = {
   nombre: {
-    valueMissing: 'El campo nombre no puede estar vacio',
+    valueMissing: 'Este campo no puede estar vacio',
   },
   email: {
-    valueMissing: 'El campo del correo no puede estar vacio',
+    valueMissing: 'Este campo no puede estar vacio',
     patternMismatch: 'El correo ingresado no es válido',
   },
   asunto: {
-    valueMissing: 'El campo asunto no puede estar vacio',
+    valueMissing: 'Este campo no puede estar vacio',
   },
   mensaje: {
-    valueMissing: 'El campo del mensaje no esta vacio',
+    valueMissing: 'Este campo no puede estar vacio',
   },
 };
 
