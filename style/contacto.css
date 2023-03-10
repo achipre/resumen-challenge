@@ -66,6 +66,7 @@
   outline: none;
   transform: translateY(25px);
   background-color: transparent;
+  color: black;
 }
 .formcontato .formcontato__contacto .formcontato__text .formcontato__form .input-text .formcontato__textarea{
   padding: 0 18px;
