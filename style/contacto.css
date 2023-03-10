@@ -28,17 +28,66 @@
   display: flex;
   gap: 32px;
 }
-.formcontato .formcontato__contacto .formcontato__text .formcontato__form .formcontato__input{
+.formcontato .formcontato__contacto .formcontato__text .formcontato__form .input-all,
+.formcontato .formcontato__contacto .formcontato__text .formcontato__form .input-text{
+  width: 100%;
+  height: 54px;
+  position: relative;
+  color: var(--color-fonttwo-light);
+}
+.formcontato .formcontato__contacto .formcontato__text .formcontato__form .input-all .error-msj,
+.formcontato .formcontato__contacto .formcontato__text .formcontato__form .input-text .error-msj{
+  position: absolute;
+  bottom: 4px;
+  padding-left: 8px;
+  color: red;
+}
+.formcontato .formcontato__contacto .formcontato__text .formcontato__form .input-all .error-active,
+.formcontato .formcontato__contacto .formcontato__text .formcontato__form .input-text .error-active{
+  color: red;
+}
+.formcontato .formcontato__contacto .formcontato__text .formcontato__form .input-text{
+  width: 100%;
+  height: 140px;
+  position: relative;
+}
+.formcontato .formcontato__contacto .formcontato__text .formcontato__form .input-all .formcontato__input,
+.formcontato .formcontato__contacto .formcontato__text .formcontato__form .input-text .formcontato__textarea{
+  position: absolute;
+  width: 100%;
+  height: 100%;
   border: none;
-  height: 56px;
   box-sizing: border-box;
-  padding: 8px;
+  padding: 0 18px;
   font-family: 'Raleway';
   font-size: 1.6rem;
-  font-weight: 400;
+  outline: none;
 }
-.formcontato .formcontato__contacto .formcontato__text .formcontato__form .formcontato__input::placeholder{
-  color: var(--color-fonttwo-light);
+.formcontato .formcontato__contacto .formcontato__text .formcontato__form .input-text .formcontato__textarea{
+  padding: 18px;
+}
+
+.formcontato__contacto .formcontato__text .formcontato__form .input-all .placeholder,
+.formcontato .formcontato__contacto .formcontato__text .formcontato__form .input-text .placeholder-mensaje{
+  position: absolute;
+  font-size: 1.6rem;
+  padding: 18px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.formcontato .formcontato__contacto .formcontato__text .formcontato__form .error-placeholder,
+.formcontato .formcontato__contacto .formcontato__text .formcontato__form .input-text .error-placeholder{
+  color: red;
+}
+.formcontato .formcontato__contacto .formcontato__text .formcontato__form .input-all .formcontato__input::placeholder{
+  color: transparent;
+}
+.formcontato .formcontato__contacto .formcontato__text .formcontato__form .input-all .formcontato__input:focus ~ .placeholder,
+.formcontato .formcontato__contacto .formcontato__text .formcontato__form .input-text .formcontato__textarea:focus ~ .placeholder-mensaje,
+.formcontato .formcontato__contacto .formcontato__text .formcontato__form .input-all .formcontato__input:not(:placeholder-shown) ~ .placeholder,
+.formcontato .formcontato__contacto .formcontato__text .formcontato__form .input-text .formcontato__textarea:valid ~ .placeholder-mensaje{
+  transform: translateY(-14px);
+  font-size: 1.2rem;
 }
 .formcontato .formcontato__contacto .formcontato__text .formcontato__form .formcontato__textarea{
   width: 100%;
@@ -49,6 +98,7 @@
   font-size: 1.6rem;
   font-weight: 400;
   resize: none;
+  outline: none;
 }
 .formcontato .formcontato__contacto .formcontato__text .formcontato__form .formcontato__textarea::placeholder{
   color: var(--color-fonttwo-light);

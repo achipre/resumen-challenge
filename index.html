@@ -5,7 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Referencia de la hoja de estilo de Css -->
-  <link rel="stylesheet" href="./style/base.css">
+  <link rel="shortcut icon" href="./assets/icon-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style
+  /base.css">
   <link rel="stylesheet" href="./style/header.css">
   <link rel="stylesheet" href="./style/hero.css">
   <link rel="stylesheet" href="./style/about.css">
@@ -22,8 +24,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <title> Mi Portafolio</title>
-  <script defer src="./script/validacion.js"></script>
   <script defer src="./script/darkmode.js"></script>
+  <script defer src="./script/validacion.js"></script>
 </head>
 <body>
     <!-- Sección del Menú  -->
@@ -368,10 +370,26 @@
           <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
           <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
           <form class="formcontato__form" name="form">
-            <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-            <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-            <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
-            <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
+            <div class="input-all input-name">
+              <input class="formcontato__input" type="text" name="nombre" placeholder="none" data-tipo="nombre" required >
+              <label for="nombre" class="placeholder placeholder-name">Nombre</label>
+              <span class="error-msj"></span>
+            </div>
+            <div class="input-all input-email">
+              <input class="formcontato__input" type="email" name="email"  placeholder="none" data-tipo="email" pattern="[a-z0-9._+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+              <label for="email" class="placeholder placeholder-email">Email</label>
+              <span class="error-msj"></span>
+            </div>
+            <div class="input-all input-asunto">
+              <input class="formcontato__input" type="text" name="asunto"  placeholder="none" data-tipo="asunto" required>
+              <label for="asunto" class="placeholder placeholder-asunto">Asunto</label>
+              <span class="error-msj"></span>
+            </div>
+            <div class="input-text input-texarea">
+              <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" data-tipo="mensaje" required></textarea>
+              <label for="mensaje" class="placeholder placeholder-mensaje">Mensaje</label>
+              <span class="error-msj"></span>
+            </div>
             <button type="submit" class="formcontato__botao experience__botao--demo">Enviar mensaje</button>
           </form>
         </div>
