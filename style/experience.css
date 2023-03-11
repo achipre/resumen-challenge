@@ -89,12 +89,12 @@
 }
 @media screen and (min-width:768px) {
   .experience{
-    max-width: 752px;
     margin: 0 auto;
   }
   .experience .experiencie__box{
-    max-width: 900px;
+    max-width: 752px;
     align-items: center;
+    margin: 0 auto;
   }
   .experience .experience__info{
 
@@ -111,7 +111,7 @@
 }
 @media screen and (min-width:1200px) {
   .experience{
-    max-width: 1136px;
+    max-width: 100%;
   }
   .experience .experience__section__title{
     font-size: 3.2rem;
@@ -121,6 +121,7 @@
     max-width: 1136px;
     flex-direction: row-reverse;
     justify-content: space-between;
+    margin: 0 auto;
     margin-bottom: 64px;
   }
   .experience .experiencie__box:nth-child(2n){
