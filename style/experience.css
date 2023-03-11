@@ -88,9 +88,18 @@
   margin-bottom: 0;
 }
 @media screen and (min-width:768px) {
+  .experience{
+    max-width: 752px;
+    margin: 0 auto;
+  }
   .experience .experiencie__box{
     max-width: 900px;
-    margin: 0 auto;
+    align-items: center;
+  }
+  .experience .experience__info{
+
+    max-width: 900px;
+    align-self: flex-start;
   }
   .experience .experiencie__box{
     margin-bottom: 64px;
@@ -101,6 +110,9 @@
   
 }
 @media screen and (min-width:1200px) {
+  .experience{
+    max-width: 1136px;
+  }
   .experience .experience__section__title{
     font-size: 3.2rem;
     margin-bottom: 32px;

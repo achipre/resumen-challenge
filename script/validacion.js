@@ -7,7 +7,7 @@ const msjErrores = {
   },
   email: {
     valueMissing: 'Este campo no puede estar vacio',
-    patternMismatch: 'El correo ingresado no es válido',
+    patternMismatch: 'Ejemplo correo: nombre@email.com',
   },
   asunto: {
     valueMissing: 'Este campo no puede estar vacio',
